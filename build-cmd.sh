@@ -60,6 +60,9 @@ case "$AUTOBUILD_PLATFORM" in
             "150")
                 versub="vc14-${collada_version}"
                 ;;
+            "160")
+                versub="vc16-${collada_version}"
+                ;;
             *)
                 echo "Unknown AUTOBUILD_VSVER='$AUTOBUILD_VSVER'" 1>&2 ; exit 1
                 ;;
