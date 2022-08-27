@@ -27,7 +27,7 @@ source_environment_tempfile="$stage/source_environment.sh"
 "$autobuild" source_environment > "$source_environment_tempfile"
 . "$source_environment_tempfile"
 
-[ -f "$stage"/packages/include/zlib/zlib.h ] || \
+[ -f "$stage"/packages/include/minizip-ng/zip.h ] || \
 { echo "You haven't yet run autobuild install." 1>&2 ; exit 1; }
 
 # There are two version numbers mixed up in the code below: the collada

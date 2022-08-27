@@ -32,10 +32,10 @@ libOpts += -framework $(notdir $(basename $(domName)))
 endif
 
 includeOpts += -Istage/packages/include \
-	-Istage/packages/include/zlib \
+	-Istage/packages/include/zlib-ng \
 	-Istage/packages/include/pcre \
 	-Istage/packages/include/libxml2 \
-	-Istage/packages/include/minizip
+	-Istage/packages/include/minizip-ng
 libOpts += -Lstage/packages/lib/$(conf)/
 
 ifeq ($(installTest),)

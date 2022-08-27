@@ -62,7 +62,7 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2_a.lib;zlib.lib;wsock32.lib;pcred.lib;pcrecppd.lib;minizip.lib;libboost_filesystem-d.lib;libboost_system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2_a.lib;zlib.lib;wsock32.lib;pcred.lib;pcrecppd.lib;libminizip.lib;libboost_filesystem-d.lib;libboost_system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\external-libs\libxml2\win32\lib;..\..\external-libs\tinyxml\lib\vc10;..\..\external-libs\pcre\lib\vc10;..\..\external-libs\minizip\win32\lib;..\..\external-libs\boost\lib\vc10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -91,7 +91,7 @@
       <WholeProgramOptimization>true</WholeProgramOptimization>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2_a.lib;zlib.lib;wsock32.lib;pcre.lib;pcrecpp.lib;minizip.lib;libboost_filesystem.lib;libboost_system.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2_a.lib;zlib.lib;wsock32.lib;pcre.lib;pcrecpp.lib;libminizip.lib;libboost_filesystem.lib;libboost_system.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\external-libs\libxml2\win32\lib;..\..\external-libs\tinyxml\lib\vc10;..\..\external-libs\pcre\lib\vc10;..\..\external-libs\minizip\win32\lib;..\..\external-libs\boost\lib\vc10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>

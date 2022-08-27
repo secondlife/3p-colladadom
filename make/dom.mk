@@ -9,10 +9,10 @@ src += src/modules/stdErrPlugin/stdErrPlugin.cpp \
 src += $(wildcard src/$(colladaVersion)/dom/*.cpp)
 
 includeOpts := -Istage/packages/include \
-	-Istage/packages/include/zlib \
+	-Istage/packages/include/zlib-ng \
 	-Istage/packages/include/pcre \
 	-Istage/packages/include/libxml2 \
-	-Istage/packages/include/minizip \
+	-Istage/packages/include/minizip-ng \
 	-Iinclude \
 	-Iinclude/$(colladaVersion)
 
