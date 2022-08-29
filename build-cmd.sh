@@ -53,17 +53,7 @@ echo "${dom_version}.${build}" > "${stage}/VERSION.txt"
 case "$AUTOBUILD_PLATFORM" in
 
     windows*)
-        case "$AUTOBUILD_VSVER" in
-            "120")
-                versub="vc12-${collada_version}"
-                ;;
-            "150")
-                versub="vc14-${collada_version}"
-                ;;
-            *)
-                echo "Unknown AUTOBUILD_VSVER='$AUTOBUILD_VSVER'" 1>&2 ; exit 1
-                ;;
-        esac
+        versub="vc14-${collada_version}"
         projdir="projects/$versub"
 
         build_sln "$projdir/dom.sln" "Release|$AUTOBUILD_WIN_VSPLATFORM" dom
