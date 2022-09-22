@@ -317,7 +317,7 @@
     <key>package_description</key>
     <map>
       <key>canonical_repo</key>
-      <string>https://bitbucket.org/lindenlab/3p-colladadom</string>
+      <string>https://github.com/secondlife/3p-colladadom</string>
       <key>copyright</key>
       <string>Copyright 2006 Sony Computer Entertainment Inc.</string>
       <key>license</key>
