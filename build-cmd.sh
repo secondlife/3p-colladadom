@@ -108,7 +108,7 @@ case "$AUTOBUILD_PLATFORM" in
         # helper                here                prefix                  release
         # repo                  root                run_tests               suffix
 
-        opts="${TARGET_OPTS:--arch $AUTOBUILD_CONFIGURE_ARCH -std=c++11 $LL_BUILD_RELEASE}"
+        opts="${TARGET_OPTS:--arch $AUTOBUILD_CONFIGURE_ARCH $LL_BUILD_RELEASE}"
 
         libdir="$top/stage"
         mkdir -p "$libdir"/lib/release
