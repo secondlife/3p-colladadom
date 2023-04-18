@@ -27,6 +27,9 @@ source_environment_tempfile="$stage/source_environment.sh"
 "$autobuild" source_environment > "$source_environment_tempfile"
 . "$source_environment_tempfile"
 
+# remove_cxxstd
+source "$(dirname "$AUTOBUILD_VARIABLES_FILE")/functions"
+
 [ -f "$stage"/packages/include/minizip-ng/zip.h ] || \
 { echo "You haven't yet run autobuild install." 1>&2 ; exit 1; }
 
@@ -118,7 +121,7 @@ case "$AUTOBUILD_PLATFORM" in
         # Without the -Wno-etc flag, incredible spam is produced
         make \
             conf=release \
-            CFLAGS="$opts" \
+            CFLAGS="$(remove_cxxstd $opts)" \
             CXXFLAGS="$opts -Wno-unused-local-typedef" \
             LDFLAGS="-Wl,-headerpad_max_install_names" \
             arch="$AUTOBUILD_CONFIGURE_ARCH" \
