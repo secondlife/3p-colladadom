@@ -27,7 +27,7 @@ source_environment_tempfile="$stage/source_environment.sh"
 "$autobuild" source_environment > "$source_environment_tempfile"
 . "$source_environment_tempfile"
 
-# replace_cxxstd
+# remove_cxxstd
 source "$(dirname "$AUTOBUILD_VARIABLES_FILE")/functions"
 
 [ -f "$stage"/packages/include/minizip-ng/zip.h ] || \
@@ -120,10 +120,11 @@ case "$AUTOBUILD_PLATFORM" in
 
         # Without the -Wno-etc flag, incredible spam is produced.
         # Empirically, when we pass -std=c++17, we get link errors for domTest.
+        plainopts="$(remove_cxxstd $opts)"
         make \
             conf=release \
-            CFLAGS="$(remove_cxxstd $opts)" \
-            CXXFLAGS="$(replace_cxxstd -std=c++14 $opts) -Wno-unused-local-typedef" \
+            CFLAGS="$plainopts" \
+            CXXFLAGS="$plainopts -Wno-unused-local-typedef" \
             LDFLAGS="-Wl,-headerpad_max_install_names" \
             arch="$AUTOBUILD_CONFIGURE_ARCH" \
             printCommands=yes \
