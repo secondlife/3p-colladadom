@@ -27,9 +27,6 @@ source_environment_tempfile="$stage/source_environment.sh"
 "$autobuild" source_environment > "$source_environment_tempfile"
 . "$source_environment_tempfile"
 
-# replace_cxxstd
-source "$(dirname "$AUTOBUILD_VARIABLES_FILE")/functions"
-
 [ -f "$stage"/packages/include/minizip-ng/zip.h ] || \
 { echo "You haven't yet run autobuild install." 1>&2 ; exit 1; }
 
@@ -112,15 +109,13 @@ case "$AUTOBUILD_PLATFORM" in
         # repo                  root                run_tests               suffix
 
         opts="${TARGET_OPTS:--arch $AUTOBUILD_CONFIGURE_ARCH $LL_BUILD_RELEASE}"
-        # Empirically, when we pass -std=c++17, we get link errors for domTest.
-        opts="$(replace_cxxstd -std=c++11 $opts)"
 
         libdir="$top/stage"
         mkdir -p "$libdir"/lib/release
 
         make clean arch="$AUTOBUILD_CONFIGURE_ARCH" # Hide 'arch' env var
 
-        # Without the -Wno-etc flag, incredible spam is produced.
+        # Without the -Wno-etc flag, incredible spam is produced
         make \
             conf=release \
             CFLAGS="$opts" \
