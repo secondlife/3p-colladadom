@@ -169,11 +169,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>604db51889ce457f8353ad66879d438a5236dbac</string>
+              <string>6c7efc923c39a9dd2ced2c65de8a91fd3f082970</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.193a7d6/minizip_ng-3.0.2.193a7d6-darwin64-193a7d6.tar.zst</string>
+              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.372f4f0/minizip_ng-3.0.2.372f4f0-darwin64-372f4f0.tar.zst</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -183,11 +183,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>339481a82dca8bb532a8cda7f66de8b6826c4426</string>
+              <string>2fd04b9cb1d7daab0a4aec85a14d591c99642ddb</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.193a7d6/minizip_ng-3.0.2.193a7d6-linux64-193a7d6.tar.zst</string>
+              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.372f4f0/minizip_ng-3.0.2.372f4f0-linux64-372f4f0.tar.zst</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -197,11 +197,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>f072f8708cbea946da3651c1433603efbf500c22</string>
+              <string>ab1186de74713d4f0ec43d05c421f601cc659d2e</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.193a7d6/minizip_ng-3.0.2.193a7d6-windows-193a7d6.tar.zst</string>
+              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.372f4f0/minizip_ng-3.0.2.372f4f0-windows-372f4f0.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows</string>
@@ -211,18 +211,18 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>edb0ce65ff76595c1870e8d4dd66ac4e783d5a3f</string>
+              <string>40470f5321fcd57f51448a57cc47320f745cb619</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.193a7d6/minizip_ng-3.0.2.193a7d6-windows64-193a7d6.tar.zst</string>
+              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.372f4f0/minizip_ng-3.0.2.372f4f0-windows64-372f4f0.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows64</string>
           </map>
         </map>
         <key>version</key>
-        <string>3.0.2.193a7d6</string>
+        <string>3.0.2.372f4f0</string>
       </map>
       <key>pcre</key>
       <map>
