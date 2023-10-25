@@ -60,8 +60,8 @@ case "$AUTOBUILD_PLATFORM" in
             "150")
                 versub="vc14-${collada_version}"
                 ;;
-            "160")
-                versub="vc16-${collada_version}"
+            "160"|"170")
+                versub="vc142-${collada_version}"
                 ;;
             *)
                 echo "Unknown AUTOBUILD_VSVER='$AUTOBUILD_VSVER'" 1>&2 ; exit 1
@@ -108,7 +108,7 @@ case "$AUTOBUILD_PLATFORM" in
         # helper                here                prefix                  release
         # repo                  root                run_tests               suffix
 
-        opts="${TARGET_OPTS:--arch $AUTOBUILD_CONFIGURE_ARCH -std=c++11 $LL_BUILD_RELEASE}"
+        opts="${TARGET_OPTS:--arch $AUTOBUILD_CONFIGURE_ARCH $LL_BUILD_RELEASE}"
 
         libdir="$top/stage"
         mkdir -p "$libdir"/lib/release

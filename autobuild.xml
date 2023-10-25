@@ -1,6 +1,5 @@
 <?xml version="1.0" ?>
-<llsd>
-<map>
+<llsd><map>
     <key>installables</key>
     <map>
       <key>boost</key>
@@ -22,9 +21,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>fedc8d63856f534b6098102e059dc548</string>
+              <string>59c1827cab82516504a2eb31e0aa7e38035b5085</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87776/805857/boost-1.72-darwin64-563847.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-boost/releases/download/v1.81-90bb2df/boost-1.81-darwin64-90bb2df.tar.zst</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -46,9 +47,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>6cc9fb4ca21365c4470a3e516544ba71</string>
+              <string>401f576f99e8a72850061c885072278e3e886434</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87784/805850/boost-1.72-windows-563847.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-boost/releases/download/v1.81-90bb2df/boost-1.81-windows-90bb2df.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows</string>
@@ -58,16 +61,18 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>0c526efc3f8825cd25cdf635e238fab3</string>
+              <string>26214a33c568929ffeeb3463ce183f2888ce4fe4</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87783/805851/boost-1.72-windows64-563847.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-boost/releases/download/v1.81-90bb2df/boost-1.81-windows64-90bb2df.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows64</string>
           </map>
         </map>
         <key>version</key>
-        <string>1.72</string>
+        <string>1.81</string>
       </map>
       <key>libxml2</key>
       <map>
@@ -88,9 +93,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>6f37dd6c4a5174f358b6cc5d953f121b</string>
+              <string>2c46547d9dc83c47f41eacc7e5092affa72f3eee</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87768/805766/libxml2-2.9.4.563845-darwin64-563845.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-libxml2/releases/download/v2.9.4.7476681/libxml2-2.9.4.7476681-darwin64-7476681.tar.zst</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -100,9 +107,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>740fc93f195c77b3a0c0800b31878ecb</string>
+              <string>4cda464277bfa6756ce4663a91cd724f3f45b8d8</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>http://automated-builds-secondlife-com.s3.amazonaws.com/ct2/890/1968/libxml2-2.9.4.500877-linux64-500877.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-libxml2/releases/download/v2.9.4.7476681/libxml2-2.9.4.7476681-linux64-7476681.tar.zst</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -112,9 +121,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>fd85d3aa13fbdfd1f1ace587e95ef151</string>
+              <string>7446cbaed41c26b67122c203c556161893b5b425</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87773/805797/libxml2-2.9.4.563845-windows-563845.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-libxml2/releases/download/v2.9.4.7476681/libxml2-2.9.4.7476681-windows-7476681.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows</string>
@@ -124,16 +135,18 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>d231d36c3b8942e0259aa2d9fcaa3b7e</string>
+              <string>7e506d26f8cb6f205146e41d74095e7e27087e84</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87772/805795/libxml2-2.9.4.563845-windows64-563845.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-libxml2/releases/download/v2.9.4.7476681/libxml2-2.9.4.7476681-windows64-7476681.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows64</string>
           </map>
         </map>
         <key>version</key>
-        <string>2.9.4.563845</string>
+        <string>2.9.4.7476681</string>
       </map>
       <key>minizip-ng</key>
       <map>
@@ -156,21 +169,39 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>843587a078102d86d90054d03354684d</string>
+              <string>303fa93a0fd6c636a65fd9d5d53beceb84752b0e</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/95876/856095/minizip_ng-3.0.2.569217-darwin64-569217.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.3e9876e/minizip_ng-3.0.2.3e9876e-darwin64-3e9876e.tar.zst</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
+          </map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>d4f35ebcea53ab6e9f2e6cbc0d680b10d10b9c53</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
+              <key>url</key>
+              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.3e9876e/minizip_ng-3.0.2.3e9876e-linux64-3e9876e.tar.zst</string>
+            </map>
+            <key>name</key>
+            <string>linux64</string>
           </map>
           <key>windows</key>
           <map>
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>26dc254f443ca9c5509547d7fbd9d8e5</string>
+              <string>ff191c1d6515234d8c671360215c52c5974988b1</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/95878/856107/minizip_ng-3.0.2.569217-windows-569217.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.3e9876e/minizip_ng-3.0.2.3e9876e-windows-3e9876e.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows</string>
@@ -180,16 +211,18 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>e9241fa325f4014995b62193321e7a1c</string>
+              <string>5dc469172ba4c6015d5b771e516bc88a65d769eb</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/95877/856106/minizip_ng-3.0.2.569217-windows64-569217.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-minizip-ng/releases/download/v3.0.2.3e9876e/minizip_ng-3.0.2.3e9876e-windows64-3e9876e.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows64</string>
           </map>
         </map>
         <key>version</key>
-        <string>3.0.2.569217</string>
+        <string>3.0.2.3e9876e</string>
       </map>
       <key>pcre</key>
       <map>
@@ -210,9 +243,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>d8c0f97fe5abef43e72b6f84aba698b2</string>
+              <string>b372d37596474043a62568e569b0ce155192f484</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>http://automated-builds-secondlife-com.s3.amazonaws.com/ct2/54856/510176/pcre-8.35.538986-darwin64-538986.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-pcre/releases/download/v8.35.979fd86/pcre-8.35.979fd86-darwin64-979fd86.tar.zst</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -234,9 +269,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>3660db45793df3050b63920bfb7d8479</string>
+              <string>5e93602abcd5130c21a6d554dc088390326e68e7</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>http://automated-builds-secondlife-com.s3.amazonaws.com/ct2/55041/512002/pcre-8.35.538986-windows-538986.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-pcre/releases/download/v8.35.979fd86/pcre-8.35.979fd86-windows-979fd86.tar.zst</string>
             </map>
             <key>name</key>
             <string>linux</string>
@@ -246,16 +283,18 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>cdee8e8b48a66266550bf279c40abc22</string>
+              <string>166564afb60a7536a038fae80e2fc9a41d6dbccb</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>http://automated-builds-secondlife-com.s3.amazonaws.com/ct2/55038/511992/pcre-8.35.538986-windows64-538986.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-pcre/releases/download/v8.35.979fd86/pcre-8.35.979fd86-windows64-979fd86.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows64</string>
           </map>
         </map>
         <key>version</key>
-        <string>8.35.538986</string>
+        <string>8.35.979fd86</string>
       </map>
       <key>zlib-ng</key>
       <map>
@@ -278,21 +317,39 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>bf306e38bf81c6095e0967bdef6a2445</string>
+              <string>dacc5f3fb307c4d1292ed1ffb1d595d83599062d</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87759/805718/zlib_ng-2.0.5.563838-darwin64-563838.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-zlib-ng/releases/download/v1.2.11.zlib-ng.32fd361/zlib_ng-1.2.11.zlib-ng.32fd361-darwin64-32fd361.tar.zst</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
+          </map>
+          <key>linux64</key>
+          <map>
+            <key>archive</key>
+            <map>
+              <key>hash</key>
+              <string>fba88375e12454ae19f4528e11ffc7ddf7d879ec</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
+              <key>url</key>
+              <string>https://github.com/secondlife/3p-zlib-ng/releases/download/v1.2.11.zlib-ng.32fd361/zlib_ng-1.2.11.zlib-ng.32fd361-linux64-32fd361.tar.zst</string>
+            </map>
+            <key>name</key>
+            <string>linux64</string>
           </map>
           <key>windows</key>
           <map>
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>8ffce5bd00e3d5afa8cb39b855237c4a</string>
+              <string>2b5a50b0a3d31a07bc74cb77871ad195eb97c550</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87761/805730/zlib_ng-2.0.5.563838-windows-563838.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-zlib-ng/releases/download/v1.2.11.zlib-ng.32fd361/zlib_ng-1.2.11.zlib-ng.32fd361-windows-32fd361.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows</string>
@@ -302,16 +359,18 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>bd103a9129e57f7ea35886bc7750f8a6</string>
+              <string>ccfca9451063e2d0e95baa73b1ad2054d3e38907</string>
+              <key>hash_algorithm</key>
+              <string>sha1</string>
               <key>url</key>
-              <string>https://automated-builds-secondlife-com.s3.amazonaws.com/ct2/87760/805729/zlib_ng-2.0.5.563838-windows64-563838.tar.bz2</string>
+              <string>https://github.com/secondlife/3p-zlib-ng/releases/download/v1.2.11.zlib-ng.32fd361/zlib_ng-1.2.11.zlib-ng.32fd361-windows64-32fd361.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows64</string>
           </map>
         </map>
         <key>version</key>
-        <string>2.0.5.563838</string>
+        <string>1.2.11.zlib-ng.32fd361</string>
       </map>
     </map>
     <key>package_description</key>
@@ -459,5 +518,4 @@
     <string>autobuild</string>
     <key>version</key>
     <string>1.3</string>
-  </map>
-</llsd>
+  </map></llsd>
