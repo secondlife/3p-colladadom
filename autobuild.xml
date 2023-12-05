@@ -21,11 +21,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>59c1827cab82516504a2eb31e0aa7e38035b5085</string>
+              <string>8539775e0a0783bd252bc548b20b3472a8254c31</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/secondlife/3p-boost/releases/download/v1.81-90bb2df/boost-1.81-darwin64-90bb2df.tar.zst</string>
+              <string>https://github.com/secondlife/3p-boost/releases/download/v1.81-09d25a7/boost-1.81-darwin64-09d25a7.tar.zst</string>
             </map>
             <key>name</key>
             <string>darwin64</string>
@@ -47,11 +47,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>401f576f99e8a72850061c885072278e3e886434</string>
+              <string>ec285559c214456a9b52078dca63150e8be1fbc1</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/secondlife/3p-boost/releases/download/v1.81-90bb2df/boost-1.81-windows-90bb2df.tar.zst</string>
+              <string>https://github.com/secondlife/3p-boost/releases/download/v1.81-09d25a7/boost-1.81-windows-09d25a7.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows</string>
@@ -61,11 +61,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>26214a33c568929ffeeb3463ce183f2888ce4fe4</string>
+              <string>d40c86fbcb6ce064d546165cbabbf035ea80e07b</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/secondlife/3p-boost/releases/download/v1.81-90bb2df/boost-1.81-windows64-90bb2df.tar.zst</string>
+              <string>https://github.com/secondlife/3p-boost/releases/download/v1.81-09d25a7/boost-1.81-windows64-09d25a7.tar.zst</string>
             </map>
             <key>name</key>
             <string>windows64</string>
