@@ -104,11 +104,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>4cda464277bfa6756ce4663a91cd724f3f45b8d8</string>
+              <string>fda5d399c21c3ad29a78f29599523ca4ecf76bd2</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/secondlife/3p-libxml2/releases/download/v2.9.4.7476681/libxml2-2.9.4.7476681-linux64-7476681.tar.zst</string>
+              <string>https://github.com/secondlife/3p-libxml2/releases/download/v2.9.4-2db4418/libxml2-2.9.4.2db4418-linux64-2db4418.tar.zst</string>
             </map>
             <key>name</key>
             <string>linux64</string>
@@ -149,7 +149,7 @@
         <key>copyright</key>
         <string>Copyright (C) 1998-2012 Daniel Veillard.  All Rights Reserved.</string>
         <key>version</key>
-        <string>2.9.4.7476681</string>
+        <string>2.9.4.2db4418</string>
         <key>name</key>
         <string>libxml2</string>
         <key>description</key>
