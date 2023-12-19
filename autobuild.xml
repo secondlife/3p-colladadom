@@ -30,11 +30,11 @@
             <key>archive</key>
             <map>
               <key>hash</key>
-              <string>a74fd7b02579643c244435f221e490081b3dafed</string>
+              <string>a3bfbdba7e1977e7e65266ec654990bb13994bd3</string>
               <key>hash_algorithm</key>
               <string>sha1</string>
               <key>url</key>
-              <string>https://github.com/Nicky-D/3p-boost/releases/download/v1.81-da76566-nomac/boost-1.81-linux64-da76566.tar.zst</string>
+              <string>https://github.com/secondlife/3p-boost/releases/download/v1.81-3d0d7fc/boost-1.81-linux64-3d0d7fc.tar.zst</string>
             </map>
             <key>name</key>
             <string>linux64</string>
