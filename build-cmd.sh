@@ -113,6 +113,8 @@ case "$AUTOBUILD_PLATFORM" in
 
         opts="${TARGET_OPTS:--arch $AUTOBUILD_CONFIGURE_ARCH $LL_BUILD_RELEASE}"
 
+        nproc=$(sysctl -n hw.physicalcpu)
+
         libdir="$top/stage"
         mkdir -p "$libdir"/lib/release
 
@@ -121,6 +123,7 @@ case "$AUTOBUILD_PLATFORM" in
         # Without the -Wno-etc flag, incredible spam is produced
         make \
             conf=release \
+            -j$nproc \
             CFLAGS="$opts" \
             CXXFLAGS="$opts -Wno-unused-local-typedef" \
             LDFLAGS="-Wl,-headerpad_max_install_names" \
@@ -158,7 +161,7 @@ case "$AUTOBUILD_PLATFORM" in
 
         make clean arch="$AUTOBUILD_CONFIGURE_ARCH" # Hide 'arch' env var
 
-        make -j6 \
+        make -j$(nproc) \
             conf=release \
             LDFLAGS="$opts" \
             CFLAGS="$opts" \
@@ -182,6 +185,3 @@ cp -a license.txt stage/LICENSES/collada.txt
 
 ## mkdir -p stage/LICENSES/collada-other
 cp -a license/tinyxml-license.txt stage/LICENSES/tinyxml.txt
-
-mkdir -p stage/docs/colladadom/
-cp -a README.Linden stage/docs/colladadom/
