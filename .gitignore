@@ -1,3 +1,4 @@
-syntax glob
 stage/
 build/
+.vs/
+x64/
