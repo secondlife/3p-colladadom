@@ -412,7 +412,6 @@
           <array>
             <string>include/collada</string>
             <string>LICENSES/*.txt</string>
-            <string>docs/colladadom/README.Linden</string>
 </array>
           <key>name</key>
           <string>common</string>
