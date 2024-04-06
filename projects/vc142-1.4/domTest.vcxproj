@@ -89,6 +89,7 @@
       <WarningLevel>Level3</WarningLevel>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libcollada14dom23-sd.lib;libboost_filesystem-mt-x32-gd.lib;libboost_system-mt-x32-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -116,6 +117,7 @@
       <WarningLevel>Level3</WarningLevel>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libcollada14dom23-sd.lib;libboost_filesystem-mt-x64-gd.lib;libboost_system-mt-x64-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -140,6 +142,7 @@
       <WarningLevel>Level3</WarningLevel>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libcollada14dom23.lib;libboost_filesystem-mt-x32.lib;libboost_system-mt-x32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -168,6 +171,7 @@
       <WarningLevel>Level3</WarningLevel>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libcollada14dom23.lib;libboost_filesystem-mt-x64.lib;libboost_system-mt-x64.lib;%(AdditionalDependencies)</AdditionalDependencies>

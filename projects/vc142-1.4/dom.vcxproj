@@ -93,6 +93,7 @@
       <WarningLevel>Level3</WarningLevel>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libxml2_a.lib;wsock32.lib;libminizip.lib;libboost_regex-mt-x32-gd.lib;libboost_filesystem-mt-x32-gd.lib;libboost_system-mt-x32-gd.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -126,6 +127,7 @@
       <WarningLevel>Level3</WarningLevel>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libxml2_a.lib;wsock32.lib;libminizip.lib;libboost_regex-mt-x64-gd.lib;libboost_filesystem-mt-x64-gd.lib;libboost_system-mt-x64-gd.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -156,6 +158,7 @@
       <WarningLevel>Level3</WarningLevel>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libxml2_a.lib;zlib.lib;wsock32.lib;libminizip.lib;libboost_regex-mt-x32.lib;libboost_filesystem-mt-x32.lib;libboost_system-mt-x32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -187,6 +190,7 @@
       <WarningLevel>Level3</WarningLevel>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libxml2_a.lib;zlib.lib;wsock32.lib;libminizip.lib;libboost_regex-mt-x64.lib;libboost_filesystem-mt-x64.lib;libboost_system-mt-x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
