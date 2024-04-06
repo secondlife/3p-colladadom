@@ -101,12 +101,12 @@ Linux Notes
 -----------
 
 The Linux build has been tested with Ubuntu Gutsy. You need to have libxml,
-PCRE, and boost filesystem development files installed on your machine to build
-the DOM. The Ubuntu packages are named libxml2-dev, libpcre3-dev, and
+boost regex, and boost filesystem development files installed on your machine to build
+the DOM. The Ubuntu packages are named libxml2-dev, libboost-regex-dev, and
 libboost-filesystem-dev.
 
 It should be easy to get the DOM building on other versions of Linux, but you'll
-need to figure out what packages to install for libxml, PCRE, and boost filesystem.
+need to figure out what packages to install for libxml, boost regex, and boost filesystem.
 
 
 Windows Notes

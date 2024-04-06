@@ -13,7 +13,8 @@
 #include <dae/daeDocument.h>
 #include <dae/daeErrorHandler.h>
 #include <dae/daeUtils.h>
-#include <pcrecpp.h>
+
+#include <boost/regex.hpp>
 
 using namespace std;
 using namespace cdom;
@@ -140,12 +141,31 @@ namespace {
 		//dir = baseName = extension = "";
 		//re.FullMatch(path, &dir, &baseName, &extension);
 
+#if 0 // Original Impl
         static pcrecpp::RE findDir("(.*/)?(.*)?");
         static pcrecpp::RE findExt("([^.]*)?(\\..*)?");
         string tmpFile;
         dir = baseName = extension = tmpFile = "";
         findDir.PartialMatch(path, &dir, &tmpFile);
         findExt.PartialMatch(tmpFile, &baseName, &extension);
+#else
+		static boost::regex findDir("(.*/)?(.*)?", boost::regex::perl | boost::regex::icase);
+		static boost::regex findExt("([^.]*)?(\\..*)?", boost::regex::perl | boost::regex::icase);
+		boost::smatch matches;
+		string tmpFile;
+		dir = tmpFile = baseName = extension = "";
+		if (boost::regex_search(path, matches, findDir))
+		{
+			dir.assign(matches[1].first, matches[1].second);
+			tmpFile.assign(matches[2].first, matches[2].second);
+		}
+
+		if (boost::regex_search(tmpFile, matches, findExt))
+		{
+			baseName.assign(matches[1].first, matches[1].second);
+			extension.assign(matches[2].first, matches[2].second);
+		}
+#endif
 	}
 }
 
@@ -702,13 +722,28 @@ bool cdom::parseUriRef(const string& uriRef,
                        string& path,
                        string& query,
                        string& fragment) {
+#if 0
 	// This regular expression for parsing URI references comes from the URI spec:
 	//   http://tools.ietf.org/html/rfc3986#appendix-B
 	static pcrecpp::RE re("^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?");
 	string s1, s3, s6, s8;
 	if (re.FullMatch(uriRef, &s1, &scheme, &s3, &authority, &path, &s6, &query, &s8, &fragment))
 		return true;
-
+#else
+	// This regular expression for parsing URI references comes from the URI spec:
+	//   http://tools.ietf.org/html/rfc3986#appendix-B
+	static boost::regex re("^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\\?([^#]*))?(#(.*))?", boost::regex::perl | boost::regex::icase);
+	boost::smatch matches;
+	if (boost::regex_match(uriRef, matches, re))
+	{
+		scheme.assign(matches[2].first, matches[2].second);
+		authority.assign(matches[4].first, matches[4].second);
+		path.assign(matches[5].first, matches[5].second);
+		query.assign(matches[7].first, matches[7].second);
+		fragment.assign(matches[9].first, matches[9].second);
+		return true;
+	}
+#endif
 	return false;
 }
 
