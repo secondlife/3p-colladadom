@@ -4,7 +4,6 @@ add_library(collada14dom SHARED ${COLLADA_BASE_SOURCES} ${dom_files})
 target_link_libraries(collada14dom ${COLLADA_LIBS})
 set_target_properties(collada14dom PROPERTIES
   COMPILE_FLAGS "${COLLADA_COMPILE_FLAGS}"
-  LINK_FLAGS "${libpcrecpp_LDFLAGS_OTHERS}"
   CLEAN_DIRECT_OUTPUT 1
   SOVERSION ${COLLADA_DOM_SOVERSION}
   VERSION ${COLLADA_DOM_VERSION})

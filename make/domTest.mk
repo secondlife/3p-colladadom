@@ -33,7 +33,6 @@ endif
 
 includeOpts += -Istage/packages/include \
 	-Istage/packages/include/zlib-ng \
-	-Istage/packages/include/pcre \
 	-Istage/packages/include/libxml2 \
 	-Istage/packages/include/minizip-ng
 libOpts += -Lstage/packages/lib/$(conf)/
@@ -47,11 +46,6 @@ includeOpts += -I$(installPrefix)/$(domFramework)/Headers
 endif
 dependentLibs += $(domName)
 
-# PCRE defs
-ifeq ($(os),ps3)
-libOpts += $(addprefix external-libs/pcre/lib/$(os)/,libpcrecpp.a libpcre.a)
-endif
-
 # TinyXml defs
 ifneq ($(findstring tinyxml,$(xmlparsers)),)
 # Notify domTest.cpp if we're supposed to do TinyXml tests
@@ -62,16 +56,17 @@ endif
 endif
 
 # Boost defs
-# Test programs use some deprecated interfaces...
-ccFlags += -DBOOST_FILESYSTEM_DEPRECATED
 ifeq ($(os),linux)
 libOpts += -lboost_filesystem-mt$(archsupport)$(debugSuffix)
+libOpts += -lboost_regex-mt$(archsupport)$(debugSuffix)
 else ifeq ($(os),mac)
 libOpts += -lboost_filesystem-mt$(archsupport)$(debugSuffix)
+libOpts += -lboost_regex-mt$(archsupport)$(debugSuffix)
 else
 includeOpts += -Iexternal-libs/boost
 libOpts += external-libs/boost/lib/$(buildID)/libboost_system$(archsupport).a
 libOpts += external-libs/boost/lib/$(buildID)/libboost_filesystem$(archsupport).a
+libOpts += external-libs/boost/lib/$(buildID)/libboost_regex$(archsupport).a
 endif
 ifeq ($(os),ps3)
 # PS3 doesn't support C++ locales, so tell boost not to use them
