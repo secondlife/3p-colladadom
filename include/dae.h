@@ -26,7 +26,7 @@
 #include <wchar.h>
 #endif
 #ifndef NO_BOOST
-#include <boost/filesystem/convenience.hpp>
+#include <boost/filesystem.hpp>
 #endif
 #ifdef _MSC_VER
 #pragma warning(pop)
