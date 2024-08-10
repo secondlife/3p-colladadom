@@ -11,7 +11,7 @@ if [ -z "$AUTOBUILD" ] ; then
     exit 1
 fi
 
-if [ "$OSTYPE" = "cygwin" ] ; then
+if [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]] ; then
     autobuild="$(cygpath -u $AUTOBUILD)"
 else
     autobuild="$AUTOBUILD"
@@ -30,6 +30,25 @@ source_environment_tempfile="$stage/source_environment.sh"
 [ -f "$stage"/packages/include/minizip-ng/zip.h ] || \
 { echo "You haven't yet run autobuild install." 1>&2 ; exit 1; }
 
+# Use msbuild.exe instead of devenv.com
+build_sln() {
+    local solution=$1
+    local config=$2
+    local proj="${3:-}"
+    local toolset="${AUTOBUILD_WIN_VSTOOLSET:-v143}"
+
+    # e.g. config = "Release|$AUTOBUILD_WIN_VSPLATFORM" per devenv.com convention
+    local -a confparts
+    IFS="|" read -ra confparts <<< "$config"
+
+    msbuild.exe \
+        "$(cygpath -w "$solution")" \
+        ${proj:+-t:"$proj"} \
+        -p:Configuration="${confparts[0]}" \
+        -p:Platform="${confparts[1]}" \
+        -p:PlatformToolset=$toolset
+}
+
 # There are two version numbers mixed up in the code below: the collada
 # version (e.g. 1.4, upstream from colladadom?) and the dom version (e.g. 2.3,
 # the version number we associate with this package). Get versions from
@@ -47,8 +66,6 @@ dom_major="$(sed -n -E 's/^ *domMajorVersion *:= *([0-9]+) *$/\1/p' "$top/Makefi
 dom_minor="$(sed -n -E 's/^ *domMinorVersion *:= *([0-9]+) *$/\1/p' "$top/Makefile")"
 dom_version="$dom_major.$dom_minor"
 dom_shortver="$dom_major$dom_minor"
-build=${AUTOBUILD_BUILD_ID:=0}
-echo "${dom_version}.${build}" > "${stage}/VERSION.txt"
 
 case "$AUTOBUILD_PLATFORM" in
 
@@ -62,9 +79,6 @@ case "$AUTOBUILD_PLATFORM" in
                 ;;
             "160"|"170")
                 versub="vc142-${collada_version}"
-                ;;
-            "170")
-                versub="vc17-${collada_version}"
                 ;;
             *)
                 echo "Unknown AUTOBUILD_VSVER='$AUTOBUILD_VSVER'" 1>&2 ; exit 1
@@ -110,6 +124,7 @@ case "$AUTOBUILD_PLATFORM" in
         # arch                  branch              build_*                 changeset
         # helper                here                prefix                  release
         # repo                  root                run_tests               suffix
+        export MACOSX_DEPLOYMENT_TARGET="$LL_BUILD_DARWIN_DEPLOY_TARGET"
 
         opts="${TARGET_OPTS:--arch $AUTOBUILD_CONFIGURE_ARCH $LL_BUILD_RELEASE}"
 
