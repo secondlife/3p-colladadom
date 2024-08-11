@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40302.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "domTest", "domTest.vcxproj", "{32FA559B-77AB-4344-B102-BB671A299561}"
 EndProject
@@ -18,6 +18,7 @@ Global
 		{32FA559B-77AB-4344-B102-BB671A299561}.Release|Win32.ActiveCfg = Release|Win32
 		{32FA559B-77AB-4344-B102-BB671A299561}.Release|Win32.Build.0 = Release|Win32
 		{32FA559B-77AB-4344-B102-BB671A299561}.Release|x64.ActiveCfg = Release|x64
+		{32FA559B-77AB-4344-B102-BB671A299561}.Release|x64.Build.0 = Release|x64
 		{E554598B-B565-4B3C-8E25-F60296AFB943}.Release|Win32.ActiveCfg = Release|Win32
 		{E554598B-B565-4B3C-8E25-F60296AFB943}.Release|Win32.Build.0 = Release|Win32
 		{E554598B-B565-4B3C-8E25-F60296AFB943}.Release|x64.ActiveCfg = Release|x64
