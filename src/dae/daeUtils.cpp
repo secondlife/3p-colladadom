@@ -19,6 +19,7 @@
 
 #ifndef NO_BOOST
 #include <boost/filesystem.hpp> // THIS WAS NOT COMMENTED.
+#include <boost/uuid/uuid_generators.hpp>
 #endif
 
 #include <cstdio> // for tmpnam
@@ -169,8 +170,12 @@ static string tmpDir = string(getenv("TMPDIR"));
 string cdom::getRandomFileName() {
     std::string randomSegment;
     // have to createa a buffer in order to make it multi-thread safe
+#ifndef NO_BOOST
     std::string tmpbuffer; tmpbuffer.resize(L_tmpnam*2+1);
     std::string tmp(tmpnam(&tmpbuffer[0]));
+#else
+	std::string tmp(boost::lexical_cast<std::string>(random_generator()()));
+#endif
 #ifdef WIN32
     randomSegment = tmp.substr(tmp.find_last_of('\\')+1);
 #elif defined(__linux__) || defined(__linux)
