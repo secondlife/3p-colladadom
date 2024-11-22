@@ -52,7 +52,7 @@ ifneq ($(obj),)
 #$(obj): cc := $(cc)
 $(obj): cc := $(CC)
 $(obj): ccFlags := $(ccFlags)
-$(obj): ccFlagsNoArch := $(filter-out -arch ppc ppc64 i386 x86_64,$(ccFlags))
+$(obj): ccFlagsNoArch := $(filter-out -arch ppc ppc64 i386 x86_64 arm64,$(ccFlags))
 $(obj): includeOpts := $(includeOpts)
 
 # Call createObjRule with a source file path

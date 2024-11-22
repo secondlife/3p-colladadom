@@ -15,12 +15,14 @@ ifeq ($(conf),debug)
 ccFlags += -g -D_DEBUG
 debugSuffix := -d
 else
-ccFlags += -O2 -DNDEBUG
+ccFlags += -O3 -DNDEBUG
 debugSuffix :=
 endif
 
 ifeq ($(arch),x86_64)
 archsupport := -x64
+else ifeq ($(arch),arm64)
+archsupport := -a64
 else
 archsupport :=
 endif
