@@ -166,6 +166,10 @@ static string tmpDir = string(getenv("TMPDIR"));
     return tmpDir;
 }
 
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored -Wdeprecated-declarations
+// suppress warning about tmpnam being unsafe.  we can't really fix the root issue
+// since getRandomFileName() will by-design be just as unsafe no matter what we do.
 string cdom::getRandomFileName() {
     std::string randomSegment;
     // have to createa a buffer in order to make it multi-thread safe
@@ -184,6 +188,7 @@ string cdom::getRandomFileName() {
 #endif
     return randomSegment;
 }
+#pragma GCC diagnostic pop
 
 const string& cdom::getSafeTmpDir() {
     // there is a race condition here is multiple collada-dom -enabled processes call getSafeTmpDir at the same time.
