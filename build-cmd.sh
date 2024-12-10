@@ -96,7 +96,7 @@ case "$AUTOBUILD_PLATFORM" in
                 then
                     "build/$versub/domTest.exe" -all
                 else
-                    # 64 bit exe ends up in different location to 32 bit hard coded 
+                    # 64 bit exe ends up in different location to 32 bit hard coded
                     # path to data directory - source code suggests it looks in a dir
                     # called domTestData first so we make one
                     mkdir -p "$projdir/x64/Release/domTestData"
@@ -111,7 +111,7 @@ case "$AUTOBUILD_PLATFORM" in
         libname="libcollada${collada_shortver}dom${dom_shortver}-s.lib"
         if [ "$AUTOBUILD_ADDRSIZE" = 32 ]
             then cp -a "build/$versub/$libname" "$stage"/lib/release/
-            else cp -a "$projdir/x64/Release/$libname" "$stage"/lib/release/ 
+            else cp -a "$projdir/x64/Release/$libname" "$stage"/lib/release/
         fi
     ;;
 
@@ -126,14 +126,12 @@ case "$AUTOBUILD_PLATFORM" in
         # repo                  root                run_tests               suffix
         export MACOSX_DEPLOYMENT_TARGET="$LL_BUILD_DARWIN_DEPLOY_TARGET"
 
-        opts="${TARGET_OPTS:--arch $AUTOBUILD_CONFIGURE_ARCH $LL_BUILD_RELEASE}"
+        opts="${TARGET_OPTS:--arch arm64 -arch x86_64 $LL_BUILD_RELEASE}"
 
         nproc=$(sysctl -n hw.physicalcpu)
 
         libdir="$top/stage"
         mkdir -p "$libdir"/lib/release
-
-        make clean arch="$AUTOBUILD_CONFIGURE_ARCH" # Hide 'arch' env var
 
         # Without the -Wno-etc flag, incredible spam is produced
         make \
@@ -142,7 +140,7 @@ case "$AUTOBUILD_PLATFORM" in
             CFLAGS="$opts" \
             CXXFLAGS="$opts -Wno-unused-local-typedef" \
             LDFLAGS="-Wl,-headerpad_max_install_names" \
-            arch="$AUTOBUILD_CONFIGURE_ARCH" \
+            arch="x86_64 arm64" \
             printCommands=yes \
             printMessages=yes
 

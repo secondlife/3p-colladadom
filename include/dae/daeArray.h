@@ -415,7 +415,7 @@ public:
 	 * @param other A reference to the other array.
 	 * @return true if the arrays are equal, false otherwise.
 	 */
-	bool operator==(const daeTArray<T>& other) {
+	bool operator==(const daeTArray<T>& other) const {
 		if (getCount() != other.getCount())
 			return false;
 		for (size_t i = 0; i < getCount(); i++)
