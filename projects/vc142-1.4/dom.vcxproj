@@ -149,15 +149,14 @@
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\include;..\..\include\1.4;..\..\stage\packages\include;..\..\stage\packages\include\libxml2;..\..\stage\packages\include\minizip-ng;..\..\stage\packages\include\zlib-ng;..\..\external-libs\tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableLanguageExtensions>false</DisableLanguageExtensions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;DOM_DYNAMIC;DOM_EXPORT;DOM_INCLUDE_LIBXML;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libxml2.lib;Bcrypt.lib;zlib.lib;wsock32.lib;minizip.lib;libboost_regex-mt-x32.lib;libboost_filesystem-mt-x32.lib;libboost_system-mt-x32.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -180,15 +179,14 @@
     <ClCompile>
       <AdditionalIncludeDirectories>..\..\include;..\..\include\1.4;..\..\stage\packages\include;..\..\stage\packages\include\libxml2;..\..\stage\packages\include\minizip-ng;..\..\stage\packages\include\zlib-ng;..\..\external-libs\tinyxml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <DisableLanguageExtensions>false</DisableLanguageExtensions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_DEPRECATE;DOM_DYNAMIC;DOM_EXPORT;DOM_INCLUDE_LIBXML;LIBXML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <AdditionalDependencies>libxml2.lib;Bcrypt.lib;zlib.lib;wsock32.lib;minizip.lib;libboost_regex-mt-x64.lib;libboost_filesystem-mt-x64.lib;libboost_system-mt-x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
