@@ -92,7 +92,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libcollada14dom23-sd.lib;libboost_filesystem-mt-x32-gd.lib;libboost_system-mt-x32-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcollada14dom23-sd.lib;libboost_filesystem.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(OutDir);..\..\stage\packages\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -120,7 +120,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libcollada14dom23-sd.lib;libboost_filesystem-mt-x64-gd.lib;libboost_system-mt-x64-gd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcollada14dom23-sd.lib;libboost_filesystem.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(OutDir);..\..\stage\packages\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -143,7 +143,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libcollada14dom23.lib;libboost_filesystem-mt-x32.lib;libboost_system-mt-x32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcollada14dom23.lib;libboost_filesystem.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(OutDir);..\..\stage\packages\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -170,7 +170,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libcollada14dom23.lib;libboost_filesystem-mt-x64.lib;libboost_system-mt-x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcollada14dom23.lib;libboost_filesystem.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(OutDir);..\..\stage\packages\lib\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>

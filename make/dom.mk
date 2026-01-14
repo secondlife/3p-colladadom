@@ -53,11 +53,9 @@ debug_suffix = "-d"
 else
 debug_suffix = ""
 endif
-# Boost 1.72 delivers libboost_[file]system-mt-x64.a, and we're getting link
-# errors about missing libboost_[file]system-mt.a. Hence $(archsupport).
-libOpts += stage/packages/lib/$(conf)/libboost_system-mt$(archsupport)$(debug_suffix).a
-libOpts += stage/packages/lib/$(conf)/libboost_filesystem-mt$(archsupport)$(debug_suffix).a 
-libOpts += stage/packages/lib/$(conf)/libboost_regex-mt$(archsupport)$(debug_suffix).a 
+# Note: Might need to use something like libboost_filesystem-mt$(archsupport).a
+# if we get more then one arch
+libOpts += stage/packages/lib/$(conf)/libboost_filesystem$(debug_suffix).a
 endif
 
 # minizip

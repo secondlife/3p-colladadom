@@ -96,7 +96,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2.lib;Bcrypt.lib;wsock32.lib;minizip.lib;libboost_regex-mt-x32-gd.lib;libboost_filesystem-mt-x32-gd.lib;libboost_system-mt-x32-gd.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2.lib;Bcrypt.lib;wsock32.lib;minizip.lib;libboost_filesystem.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\stage\packages\lib\debug;..\..\external-libs\tinyxml\lib\vc10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -130,7 +130,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2.lib;Bcrypt.lib;wsock32.lib;minizip.lib;libboost_regex-mt-x64-gd.lib;libboost_filesystem-mt-x64-gd.lib;libboost_system-mt-x64-gd.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2.lib;Bcrypt.lib;wsock32.lib;minizip.lib;libboost_filesystem.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\stage\packages\lib\debug;..\..\external-libs\tinyxml\lib\vc10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -159,7 +159,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2.lib;Bcrypt.lib;zlib.lib;wsock32.lib;minizip.lib;libboost_regex-mt-x32.lib;libboost_filesystem-mt-x32.lib;libboost_system-mt-x32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2.lib;Bcrypt.lib;zlib.lib;wsock32.lib;minizip.lib;libboost_filesystem.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\stage\packages\lib\release;..\..\external-libs\tinyxml\lib\vc10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
@@ -189,7 +189,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>libxml2.lib;Bcrypt.lib;zlib.lib;wsock32.lib;minizip.lib;libboost_regex-mt-x64.lib;libboost_filesystem-mt-x64.lib;libboost_system-mt-x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libxml2.lib;Bcrypt.lib;zlib.lib;wsock32.lib;minizip.lib;libboost_filesystem.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\stage\packages\lib\release;..\..\external-libs\tinyxml\lib\vc10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
