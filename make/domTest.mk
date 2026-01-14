@@ -57,16 +57,12 @@ endif
 
 # Boost defs
 ifeq ($(os),linux)
-libOpts += -lboost_filesystem-mt$(archsupport)$(debugSuffix)
-libOpts += -lboost_regex-mt$(archsupport)$(debugSuffix)
+libOpts += -lboost_filesystem$(debugSuffix)
 else ifeq ($(os),mac)
-libOpts += -lboost_filesystem-mt$(archsupport)$(debugSuffix)
-libOpts += -lboost_regex-mt$(archsupport)$(debugSuffix)
+libOpts += -lboost_filesystem$(debugSuffix)
 else
 includeOpts += -Iexternal-libs/boost
-libOpts += external-libs/boost/lib/$(buildID)/libboost_system$(archsupport).a
-libOpts += external-libs/boost/lib/$(buildID)/libboost_filesystem$(archsupport).a
-libOpts += external-libs/boost/lib/$(buildID)/libboost_regex$(archsupport).a
+libOpts += external-libs/boost/lib/$(buildID)/libboost_filesystem.a
 endif
 ifeq ($(os),ps3)
 # PS3 doesn't support C++ locales, so tell boost not to use them
