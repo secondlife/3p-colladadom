@@ -120,7 +120,7 @@ list<string> cdom::makeStringList(const char* s, ...) {
 	va_end(args);
 	return result;
 }
-#endif 0
+#endif
 
 string cdom::getCurrentDir() {
 #ifdef __CELLOS_LV2__
